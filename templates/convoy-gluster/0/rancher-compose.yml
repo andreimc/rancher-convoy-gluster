@@ -13,7 +13,7 @@
        label: "GlusterFS Servers"
        type: "string"
        required: true
-       default: glusterfs.service.consul
+       default: "glusterfs.service.consul"
        description: Server address that is running GlusterFS
 
 convoy-gluster:
