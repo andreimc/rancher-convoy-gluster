@@ -11,7 +11,7 @@
        default: gluster_vol
      - variable: "GLUSTERFS_SERVICE"
        label: "GlusterFS Service"
-       type: "service"
+       type: "string"
        required: true
        default: glusterfs.service.consul
        description: Service that is running GlusterFS
