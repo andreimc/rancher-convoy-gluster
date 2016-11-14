@@ -9,7 +9,7 @@ convoy-gluster:
     - /proc:/host/proc
     - /var/run:/host/var/run
     - /etc/docker/plugins:/etc/docker/plugins
-  image: rancher/convoy-agent:v0.10.0
+  image: lusu777/convoy-agent:latest
   command: volume_agent_glusterfs
 
 convoy-gluster-storagepool:
@@ -17,5 +17,5 @@ convoy-gluster-storagepool:
     io.rancher.container.create_agent: 'true'
   volumes:
     - /var/run:/host/var/run
-  image: rancher/convoy-agent:v0.10.0
+  image: lusu777/convoy-agent:latest
   command: storagepool-agent
